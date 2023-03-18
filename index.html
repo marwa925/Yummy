@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading position-fixed  bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div class="nav-side">
+        <div class="nav-content p-4">
+
+            <div class="nav-links">
+                <ul>
+                    <li class="animate__animated " id="search">Search</li>
+                    <li class="animate__animated" id="categoryLink">Categories</li>
+                    <li class="animate__animated" id="areaLink">Area</li>
+                    <li class="animate__animated" id="ingredientLink">Ingredients</li>
+                    <li class="animate__animated" id="contactLink">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-solid fa-globe"></i> </p>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="nav-icon py-3 px-2">
+            <div class="text-center"><img src="img/logo.png" class="col-10" alt=""></div>
+            <div class="closeD hide">
+                <i class="fa-solid fa-xmark" id="close"></i>
+                
+            </div>
+            <div class="bars show">
+                <i class="fa-solid fa-bars" id="barIcon"></i>
+
+            </div>
+            <div><i class="fa-solid fa-globe"></i><br><i class="fa-solid fa-share-nodes "></i></div>
+        </div>
+    </div>
+    <section class="container home made">
+        <div class="row py-5  g-3" id="main">
+            
+        </div>
+    </section>
+    <section class="details container text-white hide made">
+        <div class="row py-5">
+            <div class="col-md-4">
+                <div class="detailsInner">
+                    <div>
+                        <img  class="w-100 rounded" alt="" id="imgId">
+                    </div>
+                    <h2 id="title" class="fw-bolder text-info fs-4"></h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="detailsContent">
+                    <h2 class="fw-bolder text-info fs-4">Instructions</h2>
+                    <p id="desc"></p>
+                    <p class="fw-bolder text-info fs-4">Area : <span id="area" class="text-white" ></span></p>
+                    <p class="fw-bolder text-info fs-4">Category : <span id="categ" class="text-white"></span></p>
+                    <div class="">
+                        <p class="fw-bolder text-info fs-4">Recipes :</p>
+                        <ul id="recipes">
+                            
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="fw-bolder text-info fs-4">Tags :</p>
+                        <ul id="tags">
+                            
+                        </ul>
+                    </div>
+                    <p>
+                        <a  class="btn btn-success" id="source" target="_blank">Source</a>
+                        <a  class="btn btn-danger" id="youtupe" target="_blank">YouTube</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="search container made">
+        
+            <div class="row g-3 py-5">
+                <div class="col-md-6">
+                    <div>
+                        <input type="text" placeholder="Search By Name" id="searN" class="form-control text-white w-100 bg-transparent ">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input type="text" placeholder="Search By First Letter" id="searF" class="form-control text-white w-100 bg-transparent ">
+                    </div>
+                </div>
+            </div>  
+        
+        <div class="row g-3 searchR my-3">
+            
+        </div>
+    </section>
+    <section class="categ container made">
+        <div class="row g-3 py-5" id="categR">
+            
+        </div>
+    </section>
+    <section class="categDet container made">
+        <div class="row g-3 py-5" id="categDetRow">
+            
+        </div>
+    </section>
+    <section class="area container made">
+        <div class="row g-3 py-5 text-white" id="areaR">
+            
+        </div>
+    </section>
+    <section class="areaDet container made">
+        <div class="row g-3 py-5 text-white" id="areaDetR">
+            
+        </div>
+    </section>
+    <section class="ingredient container made">
+        <div class="row g-3 py-5 text-white" id="ingredR">
+            
+        </div>
+    </section>
+    <section class="ingredientDet container made">
+        <div class="row g-3 py-5 text-white" id="ingredDetR">
+            
+        </div>
+    </section>
+    <section class="contact container made">
+        <div class="d-flex align-items-center justify-content-center vh-100 ">
+            <div class="row g-3 py-5 w-75" id="contactR">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Your Name" class="form-control w-100 p-1 ps-2" id="name" >
+                    <div class="alert text-center my-2" id="nameAlert">
+                        <span>Special characters and numbers not allowed</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Enter Your Email" class="form-control w-100 p-1" id="email">
+                    <div class="alert text-center my-2" id="alertEmail">
+                        <span>Email not valid *exemple@yyy.zzz</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Your Phone" class="form-control w-100 p-1" id="phone">
+                    <div class="alert text-center my-2" id="alertPhone">
+                        <span>Enter valid Phone Number</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Your Age" class="form-control w-100 p-1" id="age">
+                    <div class="alert text-center my-2" id="alertAge">
+                        <span>Enter valid Age</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="Enter Your Password" class="form-control w-100 p-1" id="pass">
+                    <div class="alert text-center my-2" id="alertPass">
+                        <span>Enter valid password *Minimum eight characters or number</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="Enter Your Repassword" class="form-control w-100 p-1" id="repass">
+                    <div class="alert text-center my-2" id="alertRepass">
+                        <span>Enter valid repassword</span>
+                    </div>
+                </div>
+                <p class="text-center"><button class="btn btn-outline-danger" disabled id="submit">Submite</button></p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

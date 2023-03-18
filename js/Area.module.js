@@ -41,7 +41,7 @@ export class Area{
     }
     displayDetails(data){
         let temp=``;
-        for(let i=0; i<20 ; i++){
+        for(let i=0; i<data.length ; i++){
             temp+=`<div class="col-md-3">
             <div class="inner rounded position-relative overflow-hidden" id="${data[i].idMeal}">
                 <div>

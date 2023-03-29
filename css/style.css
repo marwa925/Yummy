@@ -120,6 +120,9 @@ i{
     }
     .nav-icon{
         width: 30%;
+        background-color:   rgba(0, 0, 0, 0.544);
     }
-    
+    i{
+        color: #fff;
+    }
 }
